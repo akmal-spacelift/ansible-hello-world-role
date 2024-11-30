@@ -1,0 +1,5 @@
+#SPDX-License-Identifier: MIT-0
+---
+# defaults file for my-first-role
+hello_world_message: Hello World!
+hello_world_dir: /tmp/shared/hello-world

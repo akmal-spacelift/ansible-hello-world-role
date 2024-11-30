@@ -1,0 +1,16 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for my-first-role
+  - name: Print message
+    debug:
+      msg: "{{ hello_world_message }}"
+  
+  - name: Create directory
+    file:
+      path: "{{ hello_world_dir }}"
+      state: directory
+  
+  - name: Save message
+    template:
+      src: hello_world.txt.j2
+      dest: "{{ hello_world_dir }}/hello_world.txt"
